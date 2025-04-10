@@ -22,23 +22,7 @@ Este projeto é uma landing page criada para uma loja de móveis fictícia, com 
 
 ### 📁 Estrutura
 
-src/
-│
-├── index.html
-├── javascript/
-│   └── script.js
-├── styles/
-│   ├── footer.css
-│   ├── header.css
-│   ├── home.css
-│   ├── menu.css
-│   ├── style.css
-│   └── testimonials.css
-├── images/
-│   └── [imagens utilizadas no site]
-```
-
-- `index.html`: arquivo principal da aplicação.
-- `scripts/main.js`: contém a lógica JavaScript do projeto.
-- `styles/`: pasta com todos os arquivos de estilos CSS, separados por seções.
-- `images/`: contém todas as imagens utilizadas no site (ícones, banners, etc).
+- `index.html`: estrutura principal da página.
+- `script.js`: contém a lógica JavaScript do projeto.
+- `src/images`: contém todas as imagens utilizadas no site (ícones, banners, etc).
+- `src/styles`: pasta com todos os arquivos de estilos CSS, separados por seções.
