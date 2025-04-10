@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('header.css');
+@import url('home.css');
+@import url('menu.css');
+@import url('testimonials.css');
+@import url('footer.css');
+
+:root {
+  --color-primary-1: #0C3A2D;
+  --color-primary-2: #6D9773;
+  --color-primary-3: white;
+  --color-primary-4: #1d1d1d;
+  --color-primary-5: #1d1d1dad;
+  --color-primary-6: #ffb902;
+}
+
+*{
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(251, 255, 250);
+}
+
+section {
+  padding: 28px 8%;
+}
+
+.btn-default {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-1);
+  color: var(--color-primary-3);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 600;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color .3s ease;
+  margin-top: 10px;
+}
+
+.btn-default:hover {
+  background-color: var(--color-primary-2);
+}
+
+.btn-default span {
+  color: var(--color-primary-3);
+}
+
+.nav_item.active a {
+  color: var(--color-primary-1);
+  border-bottom: 3px solid var(--color-primary-2);
+}
+
+#mobile_btn {
+  display: none;
+}
+
+#mobile_menu {
+  display: none;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--color-primary-4);
+}
+
+i {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1170px) {
+  #nav_list, #navbar .btn-default {
+    display: none;
+  }
+
+  #mobile_btn {
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  #mobile_menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #mobile_nav_list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px 0px;
+  }
+
+  #mobile_nav_list .nav_item {
+    list-style: none;
+    text-align: center;
+}}
+
+.section-title {
+  color: var(--color-primary-1);
+  font-size: 1.563rem;
+}
+
+.section-subtitle {
+  font-size: 2.1875rem;
+}

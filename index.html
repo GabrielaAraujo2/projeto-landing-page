@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="src/styles/style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Landing Page</title>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <i class="fa-solid fa-couch" id="nav_logo">store</i>
+
+      <ul id="nav_list">
+        <li class="nav_item active">
+          <a href="#home">Início</a>
+        </li>
+        <li class="nav_item">
+          <a href="#menu">Catálogo</a>
+        </li>
+        <li class="nav_item">
+          <a href="#testimonials">Avaliações</a>
+        </li>
+      </ul>
+
+      <button class="btn-default">Peça aqui</button>
+
+      <button id="mobile_btn" aria-label="Abrir menu de navegação"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+
+    <div id="mobile_menu">
+      <ul id="mobile_nav_list">
+        <li class="nav_item">
+          <a href="#home">Início</a>
+        </li>
+        <li class="nav_item">
+          <a href="#menu">Catálogo</a>
+        </li>
+        <li class="nav_item">
+          <a href="#testimonials">Avaliações</a>
+        </li>
+      </ul>
+
+      <button class="btn-default">Peça aqui</button>
+    </div>
+  </header>
+
+    <main id="content">
+      <section id="home">
+        <div class="shape"></div>
+        <div id="cta">
+          <h1 class="title">O móvel dos seus <span>sonhos</span></h1>
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p id="cta_buttons">
+            <a href="#" class="btn-default"><span>Ver Catálogo</span></a>
+  
+            <a href="tel:+55 5555-5555" id="phone_button">
+              <button class="btn-default">
+                <i class="fa-solid fa-phone"></i>
+              </button>
+              (81) 9 8748-6734
+            </a>
+          </p>
+          <div class="social-media-buttons">
+            <a href="#">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+  
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+  
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+
+        <div id="banner">
+          <img src="src/images/img_banner.png" alt="">
+        </div>
+      </section>
+
+      <section id="menu">
+        <h2 class="section-title">Catálogo</h2>
+        <h3 class="section-subtitle">Nossos móveis incríveis</h3>
+
+        <div id="moveis">
+          <div class="movel"> <!--primeiro móvel-->
+            <div class="movel-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img src="src/images/movel_1.png" class="movel-image" alt="imagem de um sofá">
+            <h3 class="movel-title">Lorem Ipsum</h3>
+
+            <span class="movel-desciption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+
+            <div class="movel-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="movel-price">
+              <h4>R$890,00</h4>
+              <button class="btn-default"><i class="fa-solid fa-basket-shopping"></i></button>
+            </div>
+          </div>
+
+
+          <div class="movel"> <!--segundo móvel-->
+            <div class="movel-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img src="src/images/movel_2.png" class="movel-image" alt="imagem de um aparador">
+            <h3 class="movel-title">Lorem Ipsum</h3>
+
+            <span class="movel-desciption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+
+            <div class="movel-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="movel-price">
+              <h4>R$305,00</h4>
+              <button class="btn-default"><i class="fa-solid fa-basket-shopping"></i></button>
+            </div>
+          </div>
+
+
+          <div class="movel"> <!--terceiro móvel-->
+            <div class="movel-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img src="src/images/movel_3.png" class="movel-image" alt="imagem de uma cama">
+            <h3 class="movel-title">Lorem Ipsum</h3>
+
+            <span class="movel-desciption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+
+            <div class="movel-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="movel-price">
+              <h4>R$950,00</h4>
+              <button class="btn-default"><i class="fa-solid fa-basket-shopping"></i></button>
+            </div>
+          </div>
+
+
+          <div class="movel"> <!--quarto móvel-->
+            <div class="movel-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img src="src/images/movel_4.png" class="movel-image" alt="imagem de um guarda-roupa">
+            <h3 class="movel-title">Lorem Ipsum</h3>
+
+            <span class="movel-desciption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+
+            <div class="movel-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="movel-price">
+              <h4>R$730,00</h4>
+              <button class="btn-default"><i class="fa-solid fa-basket-shopping"></i></button>
+          </div>
+
+          </div>
+      </section>
+
+      <section id="testimonials">
+        <img src="src/images/avaliação.png" id="testimonials-avaliacao" alt="Imagem representando as avaliações">
+
+        <div id="testimonials-content">
+          <h2 class="section-title">
+            Depoimentos
+          </h2>
+          <h3 class="section-subtitle">
+            O que os clientes falam sobre nós
+          </h3>
+
+          <div id="feedbacks">
+            <div class="feedback">
+              <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+              <div class="feedback-content">
+                <p>
+                  Juliana Braga
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iste reprehenderit fugit cupiditate excepturi quo illo iure blanditiis.
+                </p>
+
+              </div>
+            </div>
+
+
+            <div class="feedback">
+              <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+              <div class="feedback-content">
+                <p>
+                  Juliana Braga
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iste reprehenderit fugit cupiditate excepturi quo illo iure blanditiis.
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+
+          <button class="btn-default">Ver mais avaliações</button>
+        </div>
+      </section>
+    </main>
+
+    <img src="src/images/wave.svg" alt="">
+    <footer>
+      <div id="footer_items">
+        <span id="copyright">
+          &copy 2025 Gabriela Araújo
+        </span>
+
+        <div class="social-media-buttons">
+          <a href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="src/javascript/script.js"></script>    
+
+</body>
+</html>
